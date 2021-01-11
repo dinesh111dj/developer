@@ -5,3 +5,9 @@
    tasks:
     - name: Start service httpd, if not started
       service: name=httpd state=started
+
+ - hosts: DineshServers
+   name: play6
+   tasks:
+    - name: Installing nano as per client request
+      yum: name=nano state=latest
