@@ -1,0 +1,7 @@
+---
+
+ - hosts: DineshServers
+   name: play5
+   tasks:
+    - name: Start service httpd, if not started
+      service: name=httpd state=started
